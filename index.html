@@ -1,59 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Room homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Home
-  Shop
-  About
-  Contact
-
-  Discover innovative ways to decorate
-
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
-
-  Shop now
-
-  We are available all across the globe
-
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
-
-  Shop now
-
-  Manufactured with the best materials
-
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-  experience in this industry, we understand what customers want for their home and office.
-
-  Shop now
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Room homepage</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap"
+      rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <div id="overlay" class=""></div>
+      <header id="header">
+        <div>
+          <img id="logoSVG" src="./images/logo.svg" alt="svg" class="" />
+          <button id="hamburgerSVG">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="svg"
+              class="mobile-icon" />
+          </button>
+          <button id="closeSVG">
+            <img src="./images/icon-close.svg" alt="svg" class="mobile-icon" />
+          </button>
+          <nav id="navigation">
+            <ul>
+              <li>
+                <a>home</a>
+              </li>
+              <li>
+                <a>shop</a>
+              </li>
+              <li>
+                <a>about</a>
+              </li>
+              <li>
+                <a>contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div id="div1" class="main-div1"></div>
+      <div class="main-div2">
+        <div>
+          <h1 id="titleDiv">Discover innovative ways to decorate</h1>
+          <p id="bodyDiv">
+            We provide unmatched quality, comfort, and style for property owners
+            across the country. Our experts combine form and function in
+            bringing your vision to life. Create a room in your own style with
+            our collection and make your property a reflection of you and what
+            you love.
+          </p>
+          <div style="position: relative; z-index: 10">
+            <button class="letter-spacing">SHOP NOW</button>
+            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                fill="#000"
+                fill-rule="nonzero" />
+            </svg>
+          </div>
+        </div>
+        <div id="angle-arrows" class="angle-arrows">
+          <button class="arrow-item" id="prev">
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13 0L1 12l12 12"
+                stroke="#FFF"
+                fill="none"
+                fill-rule="evenodd" />
+            </svg>
+          </button>
+          <button class="arrow-item" id="next">
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1 0l12 12L1 24"
+                stroke="#FFF"
+                fill="none"
+                fill-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="main-div3"></div>
+      <div class="main-div4">
+        <div>
+          <h2 class="letter-spacing">ABOUT OUT FURNITURE</h2>
+          <p>
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+      </div>
+      <div class="main-div5"></div>
+      <footer></footer>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sebastian Jakubowski</a>.
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
